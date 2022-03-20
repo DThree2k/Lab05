@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/pink_donut_1" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivIcon"
+        android:layout_marginLeft="40dp"
+        android:text="Pink Donut"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="40dp"
+        android:text="Spicy tasty donut family"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/tvShopName"
+        android:text="$20.00"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivClock"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/tvShopName"
+        android:layout_alignLeft="@+id/tvShopName"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/tvDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShopName"
+        android:layout_alignTop="@+id/ivClock"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivClock"
+        android:text="Delivery in"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivClock"
+        android:layout_alignLeft="@+id/tvShopName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="30 min"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/tvDelivery"
+        android:layout_alignRight="@+id/tvPrice"
+        android:src="@drawable/btnadd" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivClock"
+        android:layout_toLeftOf="@+id/btnAdd"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMinus"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/tvDelivery"
+        android:layout_toLeftOf="@+id/tvCount"
+        android:src="@drawable/btnminus" />
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTime"
+        android:layout_marginLeft="40dp"
+        android:text="Restaurants info"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCotent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInfo"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:text="Order a Large Pizza but the size is the equivalent of a medium/small from other places at the same price range."
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:backgroundTint="#F1B000"
+        android:textColor="@color/white"
+        android:text="Add to cart"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Jala!"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/tvChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choice you Best food"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/tvWelcome"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvWelcome"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/tvChoice"
+        android:layout_alignLeft="@+id/tvWelcome"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Search food"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tvChoice"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/etSearch"
+        android:backgroundTint="#F1B000"
+        android:src="@drawable/icon_search" />
+
+    <Button
+        android:id="@+id/btnDonut"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etSearch"
+        android:layout_alignLeft="@+id/etSearch"
+        android:backgroundTint="#2BC4C4C4"
+        android:text="Donut"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnPinkDonut"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etSearch"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnDonut"
+        android:backgroundTint="#2BC4C4C4"
+        android:text="Pink Donut"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnFloating"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etSearch"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnPinkDonut"
+        android:backgroundTint="#2BC4C4C4"
+        android:text="Floating"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <ListView
+        android:id="@+id/lvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnDonut" />
+</RelativeLayout>
